@@ -182,6 +182,7 @@ const showVoter = () => {
     document.getElementById("submitBtn").style.display = "none";
     return;
   }
+  image.style.display = "block";
 
   const voter = voters[currentIndex];
   nameEl.textContent = `Voter ${currentIndex + 1}: ${voter.name}`;
