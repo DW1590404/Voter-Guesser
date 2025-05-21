@@ -203,7 +203,7 @@ document.getElementById("submitBtn").addEventListener("click", () => {
   currentIndex++;
   guessInput.value = "";
 
-  setTimeout(showVoter, 2000);
+  setTimeout(showVoter, 8000);
 });
 
 showVoter();
