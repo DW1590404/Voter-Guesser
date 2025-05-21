@@ -178,6 +178,7 @@ const showVoter = () => {
     image.src = ""; 
     result.textContent = "";
     guessInput.style.display = "none";
+    image.style.display = "none"; 
     document.getElementById("submitBtn").style.display = "none";
     return;
   }
