@@ -169,6 +169,14 @@ const showVoter = () => {
   if (currentIndex >= voters.length) {
     nameEl.textContent = "Thanks for playing!";
     info1.textContent = `You got ${correctGuesses} out of ${voters.length} correct.`;
+    // Clear the rest of the fields
+    info2.textContent = "";
+    religion.textContent = "";
+    environment.textContent = "";
+    education.textContent = "";
+    event.textContent = "";
+    image.src = ""; 
+    result.textContent = "";
     guessInput.style.display = "none";
     document.getElementById("submitBtn").style.display = "none";
     return;
