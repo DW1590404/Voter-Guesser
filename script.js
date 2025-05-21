@@ -194,6 +194,9 @@ const showVoter = () => {
   event.textContent = `Key Event: ${voter.event}`;
   image.src = voter.imagePath;
   result.textContent = "";
+
+  guessInput.disabled = false;
+  document.getElementById("submitBtn").disabled = false;
 };
 
 document.getElementById("submitBtn").addEventListener("click", () => {
@@ -209,6 +212,9 @@ document.getElementById("submitBtn").addEventListener("click", () => {
     result.textContent = "⚠️ Please enter 'Democrat' or 'Republican'";
     return;
   }
+  // Disable input and button
+  guessInput.disabled = true;
+  document.getElementById("submitBtn").disabled = true;
 
   currentIndex++;
   guessInput.value = "";
