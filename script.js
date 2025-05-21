@@ -178,11 +178,11 @@ const showVoter = () => {
     image.src = ""; 
     result.textContent = "";
     guessInput.style.display = "none";
-    image.style.display = "none"; 
+    image.style.visibility = "hidden"; 
     document.getElementById("submitBtn").style.display = "none";
     return;
   }
-  image.style.display = "block";
+  image.style.visibility = "visible";
 
   const voter = voters[currentIndex];
   nameEl.textContent = `Voter ${currentIndex + 1}: ${voter.name}`;
